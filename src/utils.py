@@ -7,9 +7,16 @@ def validar_id_usuario(id_usuario:str):
     return True
 
 def validar_nombre(nombre:str):
-    """
-    Valida que nombre sea no nulo y que solo caracteres"""
-    # Completar
+
+    #saca los espacios vacios al principio y final
+    nombre_limpio = nombre.strip()
+
+    #valida que no este vacio y que solo tenga letras
+    if nombre_limpio != "" and nombre_limpio.isalpha():
+        return True
+    else:
+        return False
+    
     return True
 
 def validar_email(email:str):
