@@ -1,10 +1,10 @@
+import re
+
 def validar_id_usuario(id_usuario:str):
     """
     Valida que id_usuarios sea convertible a int
     Retorna True:False
     """
-    # Completar
-    return True
 
 def validar_nombre(nombre:str):
 
@@ -22,5 +22,6 @@ def validar_nombre(nombre:str):
 def validar_email(email:str):
     """
     Valida que email sea un correo válido"""
-    # Completar
-    return True
+    # Definir un patron y un str y evaluar con de fullmatch
+    patron = r"[a-zA-Z]+@\w+[\.\w]+" # completar
+    return bool(re.fullmatch(patron, email))
