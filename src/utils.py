@@ -1,3 +1,5 @@
+import re
+
 def validar_id_usuario(id_usuario:str):
     """
     Valida que id_usuarios sea convertible a int
